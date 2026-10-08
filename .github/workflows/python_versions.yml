@@ -52,6 +52,19 @@ jobs:
                 name: my-python-app
                 path: my-python-app.zip
 
+    deploy:
+        needs: build
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Download artifact
+              uses: actions/download-artifact@v4
+              with:
+                name: my-python-app
+
+            - name: Show files
+              run: ls
+
 
 
 
