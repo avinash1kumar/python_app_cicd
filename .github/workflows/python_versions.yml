@@ -65,6 +65,9 @@ jobs:
             - name: Show files
               run: ls
 
+            - name: Extract application
+              run: unzip my-python-app.zip
+
 
 
 
