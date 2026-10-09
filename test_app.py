@@ -1,5 +1,5 @@
-from app import add, sub, divide
-import pytest
+from app import add, divide, sub
+
 
 # This is unit test
 def test_add():
